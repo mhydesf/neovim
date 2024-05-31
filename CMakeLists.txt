@@ -130,7 +130,7 @@ option(ENABLE_LIBINTL "enable libintl" ON)
 
 message(STATUS "CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}")
 
-set_default_buildtype(Debug)
+set_default_buildtype(Release)
 get_property(isMultiConfig GLOBAL PROPERTY GENERATOR_IS_MULTI_CONFIG)
 if(NOT isMultiConfig)
   # Unlike build dependencies in cmake.deps, we assume we want dev dependencies
